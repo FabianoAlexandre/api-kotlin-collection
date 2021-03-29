@@ -2,7 +2,7 @@ package one.digitalinnovation.colecttions
 
 val values = arrayOf(1, 4, 6, 4, 9)
 
-fun main(args: Array<String>) {
+fun main() {
     println("SimpĺeFor")
     simpleFor()
     println("eachFor")
@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     println("indicesFor")
     indicesFor()
     println("Ordenar")
-    Ordenar()
+    ordenar()
 
 }
 
@@ -38,7 +38,7 @@ fun indicesFor(){
         println(values[i])
     }
 }
-fun Ordenar(){
+fun ordenar(){
     values.sort()
     values.forEach{println(it)}
 
