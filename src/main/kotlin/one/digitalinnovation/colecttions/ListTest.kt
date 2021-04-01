@@ -47,15 +47,4 @@ fun orderListByGroup(){
         .groupBy { it.contracting }
         .forEach {println(it)}
 }
-data class employee(
-    val name: String,
-    val salary: Double,
-    val contracting: String
-){
-    override fun toString(): String =
-        """
-            name: $name
-            salary: $salary
-            contracting: $contracting
-        """.trimIndent()
-}
+
