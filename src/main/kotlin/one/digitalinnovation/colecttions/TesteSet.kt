@@ -5,25 +5,25 @@ val employeersTwo = setOf(Ruan)
 val employeersThree = setOf(laura, joao, Ruan)
 
 fun main(){
-    Union()
+    union()
     println("-----------------")
-    Subtract()
+    subtract()
     println("-----------------")
-    Intersect()
+    intersect()
 }
-fun Union(){
-    //Unindo os sets employeersOne e employeersTwo
+fun union(){
+    //unindo os sets employeers One e employeersTwo
     val resultUnion = employeersOne.union(employeersTwo)
     resultUnion.forEach {
         println(it) }
 }
-fun Subtract() {
+fun subtract() {
     val resultSubtract = employeersThree.subtract(employeersOne)
     resultSubtract.forEach{
         println(it)
         }
 }
-fun Intersect(){
+fun intersect(){
     val resultIntersect = employeersThree.intersect(employeersOne)
     resultIntersect.forEach{println(it)}
 }
