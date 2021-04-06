@@ -4,7 +4,7 @@ var salary = doubleArrayOf(1000.0, 2500.0, 1672.90)
 
 fun main(){
     showDoubleArray()
-    maxsalary()
+    maxSalary()
     lowestSalary()
     showSalariesLargerThousand()
     filterBetweenSalaries()
@@ -13,13 +13,14 @@ fun main(){
     getSalary()
     medianSalary()
     shortFormMedianSalary()
+    salaryPlusTenPercent()
 }
 
 fun showDoubleArray(){
     println("All Salaries")
     salary.forEach { println(it) }
 }
-fun maxsalary(){
+fun maxSalary(){
     println("------------\nLarger Salary\n${salary.maxOrNull()}")
 
 }
@@ -58,4 +59,11 @@ fun medianSalary(){
     }
     median = total/3
     println("Total of the Salaries\n${total}\nMedian of the Salaries\n${median}" )
+}
+fun salaryPlusTenPercent(){
+    println("--------------------------\nAdding Ten percent on the Salaries")
+    salary.forEachIndexed{ index, sal ->
+        salary[index] = sal * 1.1
+    }
+    salary.forEach { println(it) }
 }
